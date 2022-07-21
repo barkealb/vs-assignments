@@ -16,13 +16,13 @@ function whoWins(isThereKryptonite, enemyName)
 if (isThereKryptonite) {
     return "Superman beats " + enemyName + ", of course";
 } else {
-    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemyName +" could possibly win this one.";
+    return "Depends on how quick Superman can get rid of the Kryptonite. " + enemyName + " could possibly win this one.";
 }
     }
 
 for (var i = 0; i < enemies.length; i++)
 {
-    var isThereKryptonite:
+    var isThereKryptonite
     if (i % 2 === 0) {
         isThereKryptonite = true;
     } else {
@@ -33,12 +33,12 @@ for (var i = 0; i < enemies.length; i++)
 
 // 1 is not at all attracted, 10 is "super" attracted...
 
-function HowAttractedIsLoisLaneToMe ()
+function howAttractedIsLoisLaneToMe ()
 {
     return Math.floor((Mat.random() * 10) + 1);
 }
 
-consol.log( HowAttractedIsLoisLaneToMe ()) ;
+consol.log(howAttractedIsLoisLaneToMe ()) ;
 
 var clarkKent = true;
 var superman = false;
