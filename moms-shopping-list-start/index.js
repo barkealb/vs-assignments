@@ -27,5 +27,3 @@ form.addEventListener("submit", function(event){
 })
 
 
-// DivInput.textContent = itemName; 
-// const DivInput = document.createElement('div'); // create div
