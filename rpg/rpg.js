@@ -73,6 +73,9 @@ function safe(){
     input.keyInPause('You are safe For now');
     choice()
 }
+function loss(){
+    console.log('You have lost the game')
+}
 function runAway(){
     let chance = Math.floor((Math.random()*2)+1);
     let playerHit = Math.floor(Math.random() * (50 - 25 + 1) + 25);
@@ -126,13 +129,8 @@ function fight(){
     }
 }
 
-<<<<<<< HEAD
-function loss(){
-    console.log('You have lost the game')
-}
 
-=======
->>>>>>> 67d9b37a1b0acbb5acf0a9f8454c5860459f4d9b
+
 while(player.hp > 0){
     walk()
 }
