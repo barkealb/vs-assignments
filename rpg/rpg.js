@@ -139,17 +139,6 @@ while(player.hp <= 0){
     loss()
 }
 
-<<<<<<< HEAD
-
-=======
-function loss(){
-    console.log('You have lost the game')
-}
->>>>>>> 67d9b37a1b0acbb5acf0a9f8454c5860459f4d9b
-
-
-
-
 
 
 
