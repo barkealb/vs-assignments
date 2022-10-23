@@ -112,7 +112,6 @@ function walk(){
 } else if(chance == 2){
     safe()
 }
-}
 
 function startGame(){
     
