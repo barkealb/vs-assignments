@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Karla", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDB813;
+    padding: 30px 25px;
+    height: 70px;
+    border-bottom: 1px solid #121211;
+    z-index: 1;
+    color: #121211;
+}
+
+nav.dark {
+    background-color: #121211;
+    color: #FDB813;
+}
+
+.brand-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-left: 15px;
+    font-size: 3rem;
+}
+.nav-title {
+    font-size: 1.3rem;
+    margin-right: auto;
+    font-style: italic;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+main {
+    color: #2C2F34;
+    background-color: #FFFBDC;
+    padding: 2rem;
+}
+
+main.dark {
+    background-color: #2C2F34;
+    color: #FFFBDC ;
+}
+
+.hero-title {
+    color: #FDB813;
+    font-style: italic;
+}
+
+.hero-description {
+    width: 550px;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form-input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #FDB813;
+    text-indent: 5px;
+}
+
+.form-btn, .submit-btn {
+    padding: 9px 10px 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 2px solid #FDB813;
+    background: -webkit-linear-gradient(top,#2C2F34 0,#121211 99%);
+    color: #FDB813;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s ease-in-out;
+}
+
+.form-btn:hover, .submit-btn:hover {
+    color: #121211;
+    background: #FDB813;
+    font-size: 1.2rem;
+    border: 2px solid #121211;
+
+}
+
+.fa-solid {
+    margin-left: 10px;
+}
+
+.meme-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.meme-text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 
+    1px 1px 2px #000,
+    -1px -1px 2px #000, 
+    1px -1px 2px #000, 
+    -1px 1px 2px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom-text {
+    bottom: 50px;
+}
+
+.image {
+    max-width: 500px;
+    height: 500px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 2px 4px 0px inset;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.random-image {
+    border-radius: 5px;
+}
+
+.memes-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 8px;
+    padding: 1.25rem;
+}
+
+.meme-image{
+    border-bottom-right-radius: none;
+    border-bottom-left-radius: none;
+}
+
+.buttons-container {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121211;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 2px 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 1.25rem;
+    min-height: 44px;
+    min-width: 44px;
+    transition: all .3s ease-in-out;
+    width: 1.25rem;
+}
+
+.delete-btn {
+    color: rgba(233, 27, 27, 0.638);
+}
+
+.edit-btn {
+    color: lime;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    scale: 1.5;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 11px;
+    background-color: #FDB813;
+  }
+
+  footer.dark {
+    background-color: #121211;
+    color:#FDB813;
+  }
