@@ -1,0 +1,132 @@
+body {
+  font-family: poppins;
+}
+/* Apply a border around the form */
+form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 18rem;
+}
+
+/* Style the input fields */
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: poppin;
+  font-weight: 600;
+}
+
+/* Style the submit button */
+.form-wrapper > button  {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: poppin;
+  font-weight: 600;
+}
+
+/* Hover effect on submit button */
+button:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.issue-container {
+  margin: 50px 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.issue-buttons {
+  display: flex;
+  gap: 3rem
+}
+
+.public-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem; 
+}
+li {
+  list-style: none;
+}
+
+.list-container {
+  display: flex;
+  gap: 20rem;
+}
+
+.issues-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.issues-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 15rem;
+  margin: 20px auto;
+  gap: 10px
+}
+
+.issues-wrapper > button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+}
+
+button {
+  display: inline;
+  background-color: aqua;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.issue-cont {
+  position: relative;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+#dropdown-basic {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
